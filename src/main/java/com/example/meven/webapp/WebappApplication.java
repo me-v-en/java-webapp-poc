@@ -20,7 +20,6 @@ public class WebappApplication implements CommandLineRunner {
     }
 
     public void run(String... args) throws Exception {
-
-        System.out.println("Get Employees call: " + employeeProxy.getEmployees());
+//        System.out.println("Get Employees call: " + employeeProxy.getEmployees());
     }
 }

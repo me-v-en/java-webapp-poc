@@ -67,7 +67,7 @@ public class EmployeeProxy {
      * @param employeeId The employee id to delete
      */
     public void deleteEmployee(int employeeId) {
-        final String deleteEmployeeAPIUrl = customProperties.getApiUrl() + "/employee/" + employeeId;
+        final String deleteEmployeeAPIUrl = customProperties.getApiUrl() + "/employee/delete/" + employeeId;
 
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<Void> response = restTemplate.exchange(deleteEmployeeAPIUrl,
