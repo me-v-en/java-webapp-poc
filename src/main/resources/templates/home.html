@@ -27,5 +27,22 @@
     </tr>
     </tbody>
 </table>
+
+<h2>Créer un nouvel employé</h2>
+<form method="post" action="#" th:action="@{/saveEmployee}" th:object="${employee}">
+
+    <input type="text" th:field="*{firstName}">
+
+    <input type="text" th:field="*{lastName}">
+
+    <input type="text" th:field="*{mail}">
+
+    <input type="password" th:field="*{password}">
+
+    <button type="submit">Créer</button>
+
+</form>
+
+
 </body>
 </html>
