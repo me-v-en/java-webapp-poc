@@ -47,8 +47,8 @@ public class EmployeeProxy {
      * @param employee Employee to create
      * @return the employee created
      */
-    public Employee updateEmployee(int employeeId, Employee employee) {
-        final String createEmployeeAPIUrl = customProperties.getApiUrl() + "/employee/" + employeeId;
+    public Employee updateEmployee(Employee employee) {
+        final String createEmployeeAPIUrl = customProperties.getApiUrl() + "/employee/" + employee.getId();
 
         RestTemplate restTemplate = new RestTemplate();
         HttpEntity<Employee> request = new HttpEntity<Employee>(employee);

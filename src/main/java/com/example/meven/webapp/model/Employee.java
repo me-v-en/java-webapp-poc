@@ -5,7 +5,7 @@ import lombok.Data;
 // Lombok : generate automatically getters and setters
 @Data
 public class Employee {
-    private int id;
+    private Integer id;
 
     private String firstName;
 
